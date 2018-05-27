@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reddit DISC</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"
+	  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="display-1">Reddit DISC</h1>
+		</div>
+		<div class="row p-3">
+			<div class="col-sm">
+				<div class="input-group">
+				  <div class="input-group-prepend">
+				    <span class="input-group-text" id="basic-addon1">Subreddit</span>
+				  </div>
+				  <input type="text" class="form-control" placeholder="manga" aria-label="subreddit" aria-describedby="basic-addon1" id="subreddit">
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="input-group">
+				  <div class="input-group-prepend">
+				    <span class="input-group-text" id="basic-addon1">Series Title</span>
+				  </div>
+				  <input type="text" class="form-control" placeholder="Boku no Hero Academia" aria-label="series" aria-describedby="basic-addon1" id="series">
+				</div>
+			</div>
+			<div class="col-sm">
+				<div class="input-group">
+				  <div class="input-group-prepend">
+				    <span class="input-group-text" id="basic-addon1">From</span>
+				  </div>
+				  <input type="text" class="form-control" placeholder="100" aria-label="from" aria-describedby="basic-addon1" id="from">
+				  <div class="input-group-prepend">
+				    <span class="input-group-text" id="basic-addon1">To</span>
+				  </div>
+				  <input type="text" class="form-control" placeholder="120" aria-label="to" aria-describedby="basic-addon1" id="to">
+				</div>
+			</div>
+			<div class="col-sm-1">
+				<button type="button" class="btn btn-info" id="search-btn">Go</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm">
+				<table class="table">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Score</th>
+							<th>Title</th>
+							<th>Link</th>
+							<th>Comment</th>
+						</tr>
+					</thead>
+					<tbody id="result-table"></tbody>
+				</table>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
